@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+    <link rel="stylesheet" href="./tech.css"/>
+    <style>
+        *{
+            padding: 10px;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        .header{
+            width: 97%;
+            height: 60px;
+            background-color: gray;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .header ul{
+            list-style: none;
+            display: inline-flex;
+        }
+        .header ul li{
+            width: 100%;
+            margin: 25px;
+        }
+        .header ul li a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            padding: 15px;
+        }
+        .header ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+        html {
+            scroll-padding: 40px;
+            scroll-behavior: smooth;  
+        }
+        .banner{
+            height: 100vh;
+            margin-top: 80px;
+            background-image: url(./Image/Practical8.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-size: 100px;
+            padding: 30px;
+        }
+        h4{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 50px;
+        }
+        #section1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle img{ 
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            float: left;
+            margin: 20px;
+        }
+        .left{
+            width: 49%;
+            height: 500px;
+            margin-top: 12px;
+            background-color: grey;
+            font-size: 40px;
+            color: white;
+            float: left;
+        }
+        .left p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .part{
+            width: 49%;
+            height: 164px;
+            color: white;
+            float: right;
+            margin-bottom: 5px;
+        }
+        #Project1{
+            background-image: url(./Image/project1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #Project2{
+            background-image: url(./Image/project2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #Project3{
+            background-image: url(./Image/project\ 3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section3{
+            width: 100%;
+            float:left;
+        }
+        .section4{
+            width: 100%;
+            float: left;
+        }
+        .section4 p{
+            height: 70px;
+            background-color: plum;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#team-member">TEAM</a></li>
+            <li><a href="#tech">TECHNOLOGIES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">Practical-8</div>
+    <a name="team-member"></a>
+    <h4>Team Members</h4>
+    <div id="section1">
+        <div class="circle">
+            <img src="./Image/member1.png" />
+        </div>
+        <div class="circle">
+            <img src="./Image/member2.png" />
+        </div>
+        <div class="circle">
+            <img src="./Image/member3.png" />
+        </div>
+        <div class="circle">
+            <img src="./Image/member4.png" />
+        </div>
+    </div>
+
+    <a name="about"></a>       
+    <h4>About Us</h4>
+    <div id="section2"> 
+        <div class="left">About Projects
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum officiis vitae est quaerat
+        tempora architecto, sapiente, repellat aliquid voluptate aperiam iusto illum eveniet repellendus
+        dolorum doloremque ex minima quidem suscipit iste nobis quos eligendi. Commodi, non! Repudiandae
+        eveniet ipsum architecto eligendi quibusdam esse in ratione soluta nam, facere cum nihil vel reprehenderit,
+        tempore sapiente quod unde? Possimus incidunt soluta dolorum, numquam quasi consequuntur nesciunt
+        consectetur quos molestias, libero esse, fugit impedit ex obcaecati itaque nihil debitis quas nam
+        architecto. Aspernatur quidem officia eligendi inventore aliquam labore assumenda dolore temporibus 
+        fugit, est accusantium iste vel ab aliquid quaerat ipsa cupiditate recusandae dolorem accusamus aperiam 
+        quia doloremque et. Deleniti assumenda voluptates maiores, cumque totam, harum explicabo dolores sed 
+        voluptas reprehenderit numquam neque ipsam dolorem nobis fugit alias, a ullam beatae cum ducimus! 
+        Iure quasi rem libero aliquam in! Deleniti autem laboriosam vel. Doloribus, odit, assumenda natus hic 
+        voluptas at voluptatibus itaque libero nulla, similique in repellendus? Doloremque accusamus odio suscipit?</p>
+        </div>
+        <div class="right">
+            <div class="part" id="Project1">Project1</div>
+            <div class="part" id="Project2">Project-2</div>
+            <div class="part" id="Project3">Project-3</div>
+        </div>  
+    </div>
+
+    <div class="section3">
+        <a name="tech"></a>
+        <h4>Technologies Used</h4>
+        <div class="card">
+            <div class="image">
+                <img src="./Image/intro_html.jpg" alt="HTML Image" />
+            </div>
+            <div class="Heading">
+                <h5>Introduction to HTML</h5>
+            </div>
+            <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+            Hypertext refers to the way in which Web pages (HTML documents) are linked together.</p>
+            <a href="https://mukul-12.github.io/Fullstack_Practical5/Pages/html.html" target="_blank">Read More</a>
+        </div>
+        
+        <div class="card">
+            <div class="image">
+                <img src="./Image/intro_css.jpg" alt="CSS Image" />
+            </div>
+            <div class="Heading">
+                <h5>Introduction to CSS</h5>
+            </div>
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the
+            process of making web pages presentable. CSS allows you to apply styles to web pages.</p>
+            <a href="https://mukul-12.github.io/Fullstack_Practical5/Pages/css.html" target="_blank">Read More</a>
+        </div>
+        
+        <div class="card">
+            <div class="image">
+                <img src="./Image/intro-js.jpg" alt="JavaScript Image" />
+            </div>
+            <div class="Heading">
+                <h5>Introduction to Javascript</h5>
+            </div>
+            <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., 
+            having complex animations, clickable buttons, popup menus).</p>
+            <a href="https://mukul-12.github.io/Fullstack_Practical5/Pages/javascript.html" target="_blank">Read More</a>
+        </div>
+        
+        <div class="card">
+            <div class="image">
+                <img src="./Image/into-Bootstrap.jpg" alt="Bootstrap Image" />
+            </div>
+            <div class="Heading">
+                <h5>Introduction to Bootstrap</h5>
+            </div>
+            <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. 
+            It is the most popular HTML, CSS framework.</p>
+            <a href="https://mukul-12.github.io/Fullstack_Practical5/Pages/bootstrap.html" target="_blank">Read More</a>
+        </div>
+    </div>   
+
+    <div class="section4">
+        <a name="contact"></a>
+        <h4>Contact</h4>
+        <p>Website Template For Practical-8
+        <a href="#top"> back to top</a></p>
+    </div>
+</body>
+</html>
